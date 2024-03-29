@@ -40,7 +40,7 @@ def almost_apache_style_log(handler):
 
 def make_app(debug):
     xray_recorder.configure(
-        service='mfr.perfin.rdm.nii.ac.jp',
+        service='mfr',
         daemon_address='192.168.168.167:2000',
         sampling=False,
         context_missing='LOG_ERROR',
